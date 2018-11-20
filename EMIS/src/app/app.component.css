@@ -1,16 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
 h1 {
-	font-family: "Calibri", Times, cursive;
+	font-family: "Times New Roman", Times, cursive;
 }
 
 h2 {
-	font-family: "Helvetica", Times, sans-serif;
+	font-family: "Roboto", sans-serif;
 	color: Gray;
 }
 
 input {
-	width: 50%;
-	padding: 12px;
+	font-family: "Roboto", sans-serif;
+	width: 25%;
+	padding: 15px;
 	margin: 8px;
-	background-color: #3CBC8D;
-	color: white;
+	background-color: #f2f2f2;
+	color: black;
 }
+
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: #4CAF50;
+  width: 30%;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+/*   -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease; */
+}
+
+.form .create {
+  display: none;
+}
+
+div {
+	background-color: lightblue;
+} 

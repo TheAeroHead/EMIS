@@ -7,9 +7,26 @@
 <h2>
   Login
 </h2>
+<div class="form">
 <form>
-	<input type="text" placeholder="Username">
+	<input type="text" placeholder="Username" id="username">
 	<br>
-	<input type="password" placeholder="Password">
+	<input type="password" placeholder="Password" id="password">
+	<br><br>
+	<button (click)="login()">Login</button>
+    <p class="message">Not registered? <a href="#">Create an account</a></p>
 </form>
+<form class="create">
+ <input type="text" placeholder="firstname"/>
+	<br>
+	  <input type="text" placeholder="lastname"/>
+	  <br>
+      <input type="password" placeholder="password"/>
+	  <br>
+      <input type="text" placeholder="email address"/>
+	  <br><br>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+	</div>
 </div>
