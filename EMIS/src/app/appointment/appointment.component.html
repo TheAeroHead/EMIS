@@ -1,0 +1,33 @@
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+
+<label>
+  First Name:
+  <input type="text" formControlName="firstName" required>
+  <br>
+</label>
+
+<label>
+  Last Name:
+  <input type="text" formControlName="lastName" required>
+  <br>
+</label>
+
+<label>
+  Password:
+  <input type="password" formControlName="password" required>
+  <br>
+</label>
+
+<label>
+  Email Address:
+  <input type="text" formControlName="email" required>
+</label>
+
+<p>
+	Form Status {{ createForm.status }}
+<p>
+
+<p>
+<button type="submit" [disabled]="!createForm.valid">Create</button>
+<p>
+</form> 

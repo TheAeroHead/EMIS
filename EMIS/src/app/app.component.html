@@ -1,34 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+<base href="/"> 
   <h1>
     Welcome to {{ title }}!
   </h1>
-
-<h2>
-  Login
-</h2>
-<app-login></app-login> 
-
-<!-- <div class="form">
-<form>
-	<input type="text" placeholder="Username" id="username">
-	<br>
-	<input type="password" placeholder="Password" id="password">
-	<br><br>
-	<button (click)="login()">Login</button>
-    <p class="message">Not registered? <a href="#">Create an account</a></p>
-</form>
-<form class="create">
- <input type="text" placeholder="firstname"/>
-	<br>
-	  <input type="text" placeholder="lastname"/>
-	  <br>
-      <input type="password" placeholder="password"/>
-	  <br>
-      <input type="text" placeholder="email address"/>
-	  <br><br>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-	</div> -->
+<nav>
+  <a routerLink="/appointment" routerLinkActive="active">Create an account</a>
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+</nav>
+<router-outlet></router-outlet>
 </div> 

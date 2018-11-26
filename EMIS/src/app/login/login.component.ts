@@ -20,13 +20,11 @@ export class LoginComponent implements OnInit {
 		console.log('username: ' + this.loginForm.get('username').value);
 		console.log('password: ' + this.loginForm.get('password').value);
 		if((this.loginForm.get('username').value) == 'admin' && (this.loginForm.get('password').value) == 'admin'){
-			alert('you fucking did it');
+			alert('logging in');
 		} else { 
 			alert('incorrect login');
 		}
-  // TODO: Use EventEmitter with form value
-   /* passwordMatchValidator(); */
-}
+	}
 	
   constructor(private fb: FormBuilder) { }
 
@@ -34,11 +32,4 @@ export class LoginComponent implements OnInit {
   }
 }
 
-/* function passwordMatchValidator(g: FormGroup) {
-   if( g.get('password').value === 'admin') {
-      alert('passwords match');
-   } else {
-	   alert('false');
-   }
-} */
 

@@ -10,9 +10,9 @@ h2 {
 	color: Gray;
 }
 
-/* .form .create {
-  display: none;
-} */
+a {
+	padding: 0px 10px;
+}
 
 div {
 	background-color: #4CAF50;
