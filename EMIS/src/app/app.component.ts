@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'EMIS';
   
-  login(user, pass) {
+/*   login(user, pass) {
 	user = (<HTMLInputElement>document.getElementById('username')).value;
     pass = (<HTMLInputElement>document.getElementById('password')).value;
 	if(user == 'admin' && pass == 'admin') {
@@ -16,7 +16,7 @@ export class AppComponent {
 	}else{
 		alert('invalid login')
 	}
-  }
+  } */
 }
 
 

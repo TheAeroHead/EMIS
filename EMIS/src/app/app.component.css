@@ -10,32 +10,11 @@ h2 {
 	color: Gray;
 }
 
-input {
-	font-family: "Roboto", sans-serif;
-	width: 25%;
-	padding: 15px;
-	margin: 8px;
-	background-color: #f2f2f2;
-	color: black;
-}
-
-button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  background: #4CAF50;
-  width: 30%;
-  padding: 15px;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-/*   -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease; */
-}
-
-.form .create {
+/* .form .create {
   display: none;
-}
+} */
 
 div {
-	background-color: lightblue;
+	background-color: #4CAF50;
+	padding: 300px;
 } 
