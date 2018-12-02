@@ -1,5 +1,9 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-
+  <nav>
+    <a routerLink="/appointment" routerLinkActive="active">
+      <button mat-button color="primary">Haven't registered? Click here</button>
+    </a>
+  </nav>
 <mat-form-field class="example-full-width">
   <input matInput placeholder="Username" type="text" formControlName="username" required>
 </mat-form-field>
@@ -7,11 +11,7 @@
 <mat-form-field class="example-full-width">
   <input matInput placeholder="Password" type="password" formControlName="password" required>
 </mat-form-field>
-  <nav>
-    <a routerLink="/appointment" routerLinkActive="active">
-      <button mat-button color="primary">Haven't registered? Click here</button>
-    </a>
-  </nav>
+  
   <router-outlet></router-outlet>
 
 <p>

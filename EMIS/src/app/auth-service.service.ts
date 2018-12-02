@@ -15,7 +15,7 @@ export class AuthServiceService {
     return localStorage.getItem('LoggedInUser');
   }
   isLoggedIn() {
-    if (this.getToken() == 'admin') {
+    if (this.getToken() == 'admin') {	// eventually replace with a database query
       return true;
     }
   }
