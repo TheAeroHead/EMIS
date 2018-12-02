@@ -28,7 +28,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
-import 'hammerjs';
+//import 'hammerjs';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthServiceService } from './auth-service.service';
 import { AuthGuard } from './auth.guard';
@@ -53,7 +53,7 @@ const appRoutes: Routes = [
 	AppRoutingModule, 
 	RouterModule.forRoot( appRoutes, 
 	{enableTracing: true}	// for debugging purposes only
-	)
+	),
 	BrowserAnimationsModule,
 	MatButtonModule,
 	MatCheckboxModule,
