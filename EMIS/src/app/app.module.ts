@@ -18,7 +18,8 @@ const appRoutes: Routes = [
   { path: 'appointment', component: AppointmentComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  { path: 'logout', component: LoginComponent }
+  { path: 'logout', component: LoginComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full'}
 ];
 
 @NgModule({
