@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-input {
-	font-family: "Roboto", sans-serif;
-	width: 25%;
-	padding: 8px;
-	margin: 8px;
-	background-color: #f2f2f2;
-	color: black;
+.example-full-width {
+  width: 30%;
+  padding-right: 43px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
-label {
-	font-family: "Roboto", sans-serif;
+.createForm {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
 
 p {
@@ -20,12 +21,8 @@ p {
 button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  background: gray;
   width: 30%;
   padding: 15px;
-  color: white;
   font-size: 14px;
   cursor: pointer;
-/*   -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease; */
 }

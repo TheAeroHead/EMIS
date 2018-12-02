@@ -1,12 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-<base href="/"> 
   <h1>
-    Welcome to {{ title }}!
+    Welcome to {{ title }}
+	<br>
   </h1>
 <nav>
-  <a routerLink="/appointment" routerLinkActive="active">Create an account</a>
-  <a routerLink="/login" routerLinkActive="active">Login</a>
+  <app-login></app-login>
+  <a routerLink="/appointment" routerLinkActive="active">
+  <button mat-button color="primary">Haven't registered? Click here</button>
+  </a>
+  <br><br>
 </nav>
 <router-outlet></router-outlet>
 </div> 
+
+

@@ -2,12 +2,7 @@
 
 
 h1 {
-	font-family: "Times New Roman", Times, cursive;
-}
-
-h2 {
 	font-family: "Roboto", sans-serif;
-	color: Gray;
 }
 
 a {
@@ -16,5 +11,6 @@ a {
 
 div {
 	background-color: #4CAF50;
-	padding: 300px;
+	padding-bottom: 500px;
+	padding-top: 200px;
 } 
