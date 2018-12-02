@@ -1,18 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-p {
-	font-family: "Roboto", sans-serif;
-
-}
-
 .example-full-width {
   width: 30%;
+  padding-right: 43px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
-.loginForm {
+.createForm {
   min-width: 150px;
   max-width: 500px;
   width: 100%;
+}
+
+p {
+	font-family: "Roboto", sans-serif;
 }
 
 button {

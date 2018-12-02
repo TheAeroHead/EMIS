@@ -1,23 +1,15 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-<label>
-  Username:
-  <input type="text" formControlName="username" required>
-</label>
-
-<label>
-  Password:
-  <input type="password" formControlName="password" required>
-</label>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Username" type="text" formControlName="username" required>
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Password" type="password" formControlName="password" required>
+</mat-form-field>
 
 <p>
-	Form Status {{ loginForm.status }}
-	<br>
-	Must input usernmae and password in order to login
-<p>
-
-<p>
-<button type="submit" [disabled]="!loginForm.valid">Login</button>
+<button mat-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
 <p>
 
 </form>
