@@ -17,9 +17,13 @@ p {
 
 button {
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   width: 30%;
   padding: 15px;
   font-size: 14px;
   cursor: pointer;
+}
+
+input {
+  color: white;
 }

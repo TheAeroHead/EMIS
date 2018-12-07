@@ -1,5 +1,12 @@
 <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
 
+  <nav>
+    <a routerLink="/login" routerLinkActive="active">
+      <button mat-button color="primary">Return to Sign In</button>
+    </a>
+  </nav>
+  <router-outlet></router-outlet>
+
 <mat-form-field class="example-full-width">
   <input matInput placeholder="First Name" type="text" formControlName="firstName" required>
   <br>
