@@ -2,10 +2,6 @@
   Hello Nurse!
 </h2>
 
-<h2>
-  Welcome Michael!
-</h2>
-
 <mat-accordion class="tabs">
   <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
     <mat-expansion-panel-header>
@@ -31,12 +27,12 @@
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Email Address" value="michaelreyes1107@gmail.com">
+      <input matInput placeholder="Email Address" value="michaelreyes1107@yahoo.com">
     </mat-form-field>
     <br>
 
     <mat-form-field>
-      <input matInput placeholder="Address" value="9719 Timber Path">
+      <input matInput placeholder="Address" value="2574 Bikini Bottom">
     </mat-form-field>
 
     <mat-form-field>
@@ -123,29 +119,6 @@
       <button mat-button color="primary" (click)="nextStep()">Next</button>
     </mat-action-row>
   </mat-expansion-panel>
-
-  <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Schedule Appointment
-      </mat-panel-title>
-      <mat-panel-description>
-        Select Appointment Time
-        <mat-icon>date_range</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-    <mat-form-field>
-      <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
-    </mat-form-field>
-    <mat-datepicker #picker></mat-datepicker>
-
-    <mat-action-row>
-      <button mat-button color="warn" (click)="prevStep()">Previous</button>
-      <button mat-button color="primary" (click)="nextStep()">End</button>
-    </mat-action-row>
-  </mat-expansion-panel>
-
 </mat-accordion>
 
 <nav>

@@ -1,6 +1,125 @@
 <h2>
-  doctor works!
+  Hello Doctor!
 </h2>
+
+<mat-accordion class="tabs">
+  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Patient personal
+      </mat-panel-title>
+      <mat-panel-description>
+        Patient's Personal Info
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name" value="Michael">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Last Name" value="Reyes">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Middle Initial" value="A">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Email Address" value="michaelreyes1107@yahoo.com">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <input matInput placeholder="Address" value="2574 Bikini Bottom">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="City" value="San Antonio">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="State" value="Texas">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Zip Code" value="78250">
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Insurance
+      </mat-panel-title>
+      <mat-panel-description>
+        Patient's Insurance Info
+        <mat-icon>credit_card</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="ID Number" value="GFZ257456691">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Group Number" value="752569">
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Medical Info
+      </mat-panel-title>
+      <mat-panel-description>
+        Patient's Medical Info
+        <mat-icon>assignment</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="SSN" value="***-**-3554">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Medical Conditions" value="Ulceratvie Colitis">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Diagnoses" value="n/a">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field>
+      <input matInput placeholder="Prescriptions" value="Ursodiol: 250mg: 2 capsules: Twice a day; Mesalamine: 500mg: 1 tablet: Twice daily">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Over-the-Counter" value="Vitamin C: 500mg: 1 tablet: Once daily">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Past Treatments" value="Liver transplant: June 2009">
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
 
 <nav>
   <a routerLink="/logout" routerLinkActive="active">

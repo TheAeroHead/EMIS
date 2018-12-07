@@ -2,6 +2,21 @@ h2 {
   color: white;
 }
 
+.tabs .mat-expansion-panel-header-title,
+.tabs .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.tabs .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs .mat-form-field {
+  margin-right: 5px;
+  width: 200px;
+}
+
 button {
   margin-top: 75px;
 }
