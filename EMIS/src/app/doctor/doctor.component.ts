@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-doctor',
+  templateUrl: './doctor.component.html',
+  styleUrls: ['./doctor.component.css']
 })
-
-export class DashboardComponent implements OnInit {
+export class DoctorComponent implements OnInit {
   step = 0;
 
   setStep(index: number) {

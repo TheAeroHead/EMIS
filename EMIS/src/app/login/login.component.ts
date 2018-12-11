@@ -12,20 +12,27 @@ import { AuthServiceService } from '../auth-service.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  loginForm = this.fb.group({
+    username: ['', Validators.required],
+    password: ['', Validators.required],
+  });
 
-	loginForm = this.fb.group({
-		username: ['', Validators.required],
-		password: ['', Validators.required],
-	});
-
-	onSubmit() {
-		console.log('username: ' + this.loginForm.get('username').value);
-		console.log('password: ' + this.loginForm.get('password').value);
+  onSubmit() {
+    console.log('username: ' + this.loginForm.get('username').value);
+    console.log('password: ' + this.loginForm.get('password').value);
     if (this.loginForm.valid) {
       this.auth.sendToken(this.loginForm.value.username);
-      this.myRoute.navigate(['dashboard']);
-		}
-	}
+      if (this.auth.getToken() === 'receptionist') {
+        this.myRoute.navigate(['dashboard']);
+      } else if (this.auth.getToken() === 'patient') {
+        this.myRoute.navigate(['patient']);
+      } else if (this.auth.getToken() === 'nurse') {
+        this.myRoute.navigate(['nurse']);
+      } else if (this.auth.getToken() === 'doctor') {
+        this.myRoute.navigate(['doctor']);
+      }
+    }
+  }
 
   constructor(private fb: FormBuilder, private myRoute: Router,
               private auth: AuthServiceService) { }
