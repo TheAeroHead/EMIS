@@ -22,8 +22,8 @@ export class AppComponent implements OnInit {
 
   getUsers(): void {
   	this.userService.getAll().subscribe(
-		(res: User[] => {
-			this.user = res;
+		(res: User[]) => {
+			this.users = res;
 		},
 		(err) => {
 			this.error = err;

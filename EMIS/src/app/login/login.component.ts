@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
     username: ['', Validators.required],
     password: ['', Validators.required],
     });
+    users: User[];
+    error = '';
 
   onSubmit() {
     console.log('username: ' + this.loginForm.get('username').value);
@@ -40,11 +42,11 @@ export class LoginComponent implements OnInit {
   }
 
   constructor(private fb: FormBuilder, private myRoute: Router,
-              private auth: AuthServiceService) { }
+              private auth: AuthServiceService, public userService: UserService) { }
   
   getUsers(): void {
   	this.userService.getAll().subscribe(
-		(res: User[] => {
+		(res: User[]) => {
 			this.userService.users = res;
 		},
 		(err) => {

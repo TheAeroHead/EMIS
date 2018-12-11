@@ -4,6 +4,6 @@ export class User {
 		firstname: string,
 		lastname: string,
 		email: string,
-		age: number
+		age: number,
 		access: number) {}
 }

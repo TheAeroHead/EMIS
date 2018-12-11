@@ -17,7 +17,7 @@ export class UserService {
   getAll(): Observable<User[]> {
 	  return this.http.get(`${this.baseUrl}/user/read.php`).pipe(
 	  	map((res) => {
-			this.user = res['data'];
+			this.users = res['data'];
 			return this.users;
 			}),
 			catchError(this.handleError));
