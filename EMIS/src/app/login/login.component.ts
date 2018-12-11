@@ -20,18 +20,22 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     console.log('username: ' + this.loginForm.get('username').value);
     console.log('password: ' + this.loginForm.get('password').value);
-    if (this.loginForm.valid) {
       this.auth.sendToken(this.loginForm.value.username);
-      if (this.auth.getToken() === 'receptionist') {
+      if (this.loginForm.get('username').value === 'receptionist' &&
+      this.loginForm.get('password').value === 'correct') {
         this.myRoute.navigate(['dashboard']);
-      } else if (this.auth.getToken() === 'patient') {
+      } else if (this.loginForm.get('username').value === 'patient' &&
+        this.loginForm.get('password').value === 'correct') {
         this.myRoute.navigate(['patient']);
-      } else if (this.auth.getToken() === 'nurse') {
+      } else if (this.loginForm.get('username').value === 'nurse' &&
+        this.loginForm.get('password').value === 'correct') {
         this.myRoute.navigate(['nurse']);
-      } else if (this.auth.getToken() === 'doctor') {
+      } else if (this.loginForm.get('username').value === 'doctor' &&
+        this.loginForm.get('password').value === 'correct') {
         this.myRoute.navigate(['doctor']);
+      } else {
+        alert('incorrect username or password');
       }
-    }
   }
 
   constructor(private fb: FormBuilder, private myRoute: Router,
