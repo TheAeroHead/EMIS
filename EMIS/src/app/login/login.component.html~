@@ -21,7 +21,4 @@
 </nav>
 
 </form>
-<ul>
-	<li *ngFor="let user of userService.users">{{user.firstname}}</li>
-</ul>
 
