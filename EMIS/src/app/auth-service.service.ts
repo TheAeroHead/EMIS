@@ -16,7 +16,7 @@ export class AuthServiceService {
   }
   isLoggedIn() {
     return this.getToken() !== null;	// eventually replace with a database query
-    }
+  }
 
   logout() {
     localStorage.removeItem('LoggedInUser');
