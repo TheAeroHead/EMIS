@@ -21,6 +21,7 @@ import {MatNativeDateModule} from '@angular/material';
 import { PatientComponent } from './patient/patient.component';
 import { NurseComponent } from './nurse/nurse.component';
 import { DoctorComponent } from './doctor/doctor.component';
+import { HttpClientModule} from '@angular/common/http';
 
 
 const appRoutes: Routes = [
@@ -58,7 +59,8 @@ const appRoutes: Routes = [
     MatIconModule,
     MatExpansionModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
