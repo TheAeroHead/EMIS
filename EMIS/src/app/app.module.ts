@@ -24,7 +24,7 @@ import { DoctorComponent } from './doctor/doctor.component';
 
 
 const appRoutes: Routes = [
-  { path: 'appointment', component: AppointmentComponent },
+  { path: 'appointment', component: AppointmentComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'logout', component: LoginComponent },
