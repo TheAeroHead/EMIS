@@ -21,10 +21,10 @@ import {MatNativeDateModule} from '@angular/material';
 import { PatientComponent } from './patient/patient.component';
 import { NurseComponent } from './nurse/nurse.component';
 import { DoctorComponent } from './doctor/doctor.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
-  { path: 'appointment', component: AppointmentComponent },
+  { path: 'appointment', component: AppointmentComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'logout', component: LoginComponent },

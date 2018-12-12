@@ -11,22 +11,22 @@ import {AbstractControl} from '@angular/forms';
 })
 export class AppointmentComponent implements OnInit {
 
-  	
+
 	createForm = this.fb.group({
 		firstName: ['', Validators.required],
 		lastName: ['', Validators.required],
 		password: ['', Validators.required],
 		email: ['', Validators.required],
 	});
-	
+
 	onSubmit() {
 		console.log('First Name: ' + this.createForm.get('firstName').value);
 		console.log('Last Name: ' + this.createForm.get('lastName').value);
 		console.log('Password: ' + this.createForm.get('password').value);
 		console.log('Email: ' + this.createForm.get('email').value);
-		alert('creating account');
+		alert('creating account; use username patient to login');
 	}
-	
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
